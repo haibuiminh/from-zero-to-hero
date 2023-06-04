@@ -6,6 +6,7 @@
   justify-content: center;
   color: white;
   border-radius: 5px;
+  font-style: normal;
 }
 
 .grid-container {
@@ -29,3 +30,31 @@
 .grid-item-7 {
   grid-column: 3 / span 2;
 }
+
+@media only screen and (max-width: 600px) {
+  .item-1-2-cols {
+    grid-column: 1 / span 4;
+  }
+  .item-2-2-cols {
+    grid-column: 1 / span 4;
+  }
+}
+
+div {
+  font-style: italic;
+}
+
+#demo-id {
+  font-style: italic;
+}
+
+div#demo-id {
+  font-style: normal;
+  /* text-decoration: underline; */
+}
+
+
+/* id: 100, class 10, element: 1 
+path css property more detail ->
+
+*/
