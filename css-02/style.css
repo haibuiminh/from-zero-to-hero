@@ -1,0 +1,31 @@
+.item {
+  background-color: blueviolet;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 2fr repeat(2, 1fr); */
+  grid-template-columns: repeat(4, auto);
+  /* grid-template-columns: 1fr 2fr 2fr 1fr; */
+  /* grid-template-columns:1fr; */
+  gap: 40px;
+}
+
+
+.item-1-2-cols {
+  grid-column: 1 / span 2;
+}
+
+.item-2-2-cols {
+  grid-column: 3 / span 2;
+}
+
+.grid-item-7 {
+  grid-column: 3 / span 2;
+}
